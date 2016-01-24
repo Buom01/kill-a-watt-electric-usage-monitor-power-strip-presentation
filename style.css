@@ -1,0 +1,92 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  text-align: center;
+  line-height: 1.5;
+}
+body {
+  background: white;
+  color: black;
+}
+.impress-supported .fallback-message {
+  display: none;
+}
+.impress-supported .step.visible:not(.active) {
+  opacity: 0.1;
+}
+.impress-supported .step:not(.active) {
+  opacity: 0;
+}
+.step {
+  position: relative;
+  width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  transition: 1s all ease;
+}
+.step * {
+  max-width: 100%;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 56px;
+}
+p {
+  font-size: 28px;
+}
+a {
+  color: #0080FF;
+}
+body,
+.bg {
+  transition: 1s ease;
+}
+body.impress-on-advantages {
+  background: #B3FFB3;
+}
+body.impress-on-disadvantages {
+  background: #FFB3B3;
+}
+body #sustainable-development-bg {
+  background: url(dd.jpg) center center;
+  background-size: cover;
+}
+body.impress-on-sustainable-development #sustainable-development-bg {
+  opacity: 0.3;
+}
+body #working-bg {
+  background: url(plug.jpg) center center;
+  background-size: cover;
+}
+body.impress-on-working #working-bg {
+  opacity: 0.3;
+}
+#end {
+  color: white;
+}
+body #code-bg {
+  background: url(code.png) center center;
+  background-size: cover;
+}
+body.impress-on-end {
+  background: black;
+}
+body.impress-on-end #code-bg {
+  opacity: 0.5;
+}
